@@ -1,8 +1,8 @@
-#Christmas Count-down Timer
+# Christmas Count-down Timer
 
 In this tutorial, you will learn how to create a simple countdown to christmas timer using HTML, CSS, and Vanilla JavaScript.
 
-##HTML Structure
+## HTML Structure
 Start with telling the browser that this is an HTML5 file by adding the ```<!DOCTYPE html>``` followed by the ```<html>``` and specify ```lang``` and text direction of your content to either ```ltr``` or ```rtl``` meaning left-to-right and right-to-left repectively.
 
 Basic HTML structure will include the ```<head>``` a container for the ```<title>``` ```<script>``` ```<meta>``` and ```<link>``` to stylesheets, ```<body>``` and ```<footer>```.
@@ -13,7 +13,7 @@ In the body tag create a parent ```<div>``` container to house all content. Usin
 
 In each of the four div containers created, create two div containers. One to contain the count-down time and the other to contain the label/title (days, hours, minutes, seconds).
 
-##Adding Style 
+## Adding Style
 Using CSS, add a basic reset file to format all browser styles. Your reset file can be seperate from your main CSS file. Import your reset file into your CSS file and link the CSS file to your HTML file using the ```<link>``` in the ```<head>```. 
 
 Give your parent div container a min-width and center it . Add a background color or image to your page. Set the parent element ```<section>``` to display ```flex``` and ```justify-content:space-between```. Set the four containers to display ```flex``` and ```flex-direction:column```. Add color, font-size and margin to the label and countdown time containers.
