@@ -52,5 +52,5 @@ const countDown = setInterval(() => {
 ## References
 - [countdown Timer](https://www.w3schools.com/howto/howto_js_countdown.asp)
 
-##Demo
+## Demo
 Click [here](https://thelma-dev.github.io/christmas-countdown/) to see an example.
