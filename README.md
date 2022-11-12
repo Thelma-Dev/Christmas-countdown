@@ -21,7 +21,7 @@ Give your parent div container a min-width and center it . Add a background colo
 ## JavaScript
 Link the ```<script>``` file to your HTML file. Use the ```querySelector()``` method to get the elements that match the div selector classes.
 
-Assign the countdown date to a variable. Use a function to update the count down every second using the ```set interval```. Get today's date using ```new Date().getTime()```. Calculate the time left to countdown by subtracting the countdown date from today's date. 
+Assign the countdown date to a variable. Use a function to update the count down every second using the ```setInterval```. Get today's date using ```new Date().getTime()```. Calculate the time left to countdown by subtracting the countdown date from today's date. 
 
 Get the time calculations for days, hours, minutes, and seconds using the ```Math.floor()``` function. Set the four div containers to display the result in the div using ```.innerHTML```.
 
@@ -35,16 +35,20 @@ const countDown = setInterval(() => {
 
   const currentDate = new Date().getTime();
   const remainingTime = countDownDate - currentDate;
+  const second = 1000;
+  const minute = second * 60;
+  const hour = minute * 60;
+  const day = hour * 24;
 
-    days.innerHTML = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-    hours.innerHTML = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    minutes.innerHTML = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-    seconds.innerHTML = Math.floor((remainingTime % (1000 * 60)) / 1000);
+    days.innerHTML = Math.floor(remainingTime / (day));
+    hours.innerHTML = Math.floor((remainingTime % (day)) / (hour));
+    minutes.innerHTML = Math.floor((remainingTime % (hour)) / (minute));
+    seconds.innerHTML = Math.floor((remainingTime % (minute)) / second);
 
 
   if (remainingTime < 0) {
     clearInterval(countDown);
-    return;
+    document.querySelector('.headline').innerText = "Merry Christmas!";
   }
 }, 1000);
 ```
