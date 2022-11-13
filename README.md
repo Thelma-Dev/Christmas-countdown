@@ -23,7 +23,7 @@ Link the ```<script>``` file to your HTML file. Use the ```querySelector()``` me
 
 Assign the countdown date to a variable. Use a function to update the count down every second using the ```setInterval```. Get today's date using ```new Date().getTime()```. Calculate the time left to countdown by subtracting the countdown date from today's date. 
 
-Get the time calculations for days, hours, minutes, and seconds using the ```Math.floor()``` function. Set the four div containers to display the result in the div using ```.innerHTML```.
+Get the time calculations for days, hours, minutes, and seconds using the ```Math.floor()``` method- It rounds off a number passed a parameter to its nearest integer. Set the four div containers to display the result in the div using ```.innerHTML```.
 
 Lastly, using an ```if``` statement, display a text or clear countdown when the countdown is finished.
 
