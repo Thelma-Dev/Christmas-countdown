@@ -1,4 +1,4 @@
-# Christmas Count-down Timer
+# Christmas Count-down Timer -For Beginners
 
 In this tutorial, you will learn how to create a simple countdown to christmas timer using HTML, CSS, and Vanilla JavaScript.
 
@@ -57,4 +57,4 @@ const countDown = setInterval(() => {
 - [countdown Timer](https://www.w3schools.com/howto/howto_js_countdown.asp)
 
 ## Demo
-Click [here](https://thelma-dev.github.io/christmas-countdown/) to see an example.
+Click [here](https://thelma-dev.github.io/Christmas-countdown/) to see an example.
