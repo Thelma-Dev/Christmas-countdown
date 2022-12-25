@@ -41,9 +41,18 @@ const countDown = setInterval(() => {
     minutes.innerHTML = Math.floor((remainingTime % (hour)) / (minute));
     seconds.innerHTML = Math.floor((remainingTime % (minute)) / second);
 
-
-  if (remainingTime < 0) {
-    clearInterval(countDown);
-    heading.innerText = "Merry Christmas!";
-  }
+    if (remainingTime < 0) {
+      stopTimer();
+      heading.innerText = "Merry Christmas!";
+      days.innerHTML = 0;
+      hours.innerHTML = 0;
+      minutes.innerHTML = 0;
+      seconds.innerHTML = 0;
+    }
+  
 }, 1000);
+
+function stopTimer() {
+  clearInterval(countDown);
+}
+
